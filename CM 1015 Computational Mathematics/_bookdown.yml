@@ -1,0 +1,11 @@
+book_filename: CM 1015 Computational Mathematics
+output_dir: docs
+delete_merged_file: true
+repo: 
+language:
+  ui:
+    chapter_name: "Chapter "
+rmd_files: ["index.Rmd",
+            "01-number-bases.Rmd",
+           "02-series-and-sequence.Rmd",
+           "03-modular-arithmetic.Rmd"]

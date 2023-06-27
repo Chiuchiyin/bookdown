@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 Series and Sequence | CM 1015 Computational Mathematics</title>
+  <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
+set in the _output.yml file.
+The HTML output format for this example is bookdown::gitbook,</p>" />
+  <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 Series and Sequence | CM 1015 Computational Mathematics" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+set in the _output.yml file.
+The HTML output format for this example is bookdown::gitbook,</p>" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 Series and Sequence | CM 1015 Computational Mathematics" />
+  
+  <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+set in the _output.yml file.
+The HTML output format for this example is bookdown::gitbook,</p>" />
+  
+
+<meta name="author" content="John Doe" />
+
+
+<meta name="date" content="2023-06-27" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="number-bases-conversion-and-operations.html"/>
+<link rel="next" href="modular-arithmetic.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">CM 1015 Computational Mathematics</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="1" data-path="number-bases-conversion-and-operations.html"><a href="number-bases-conversion-and-operations.html"><i class="fa fa-check"></i><b>1</b> Number Bases, Conversion and Operations</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="number-bases-conversion-and-operations.html"><a href="number-bases-conversion-and-operations.html#number-bases"><i class="fa fa-check"></i><b>1.1</b> Number Bases</a></li>
+<li class="chapter" data-level="1.2" data-path="number-bases-conversion-and-operations.html"><a href="number-bases-conversion-and-operations.html#number-conversion"><i class="fa fa-check"></i><b>1.2</b> Number Conversion</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="number-bases-conversion-and-operations.html"><a href="number-bases-conversion-and-operations.html#converting-from-decimal-to-other-number-base"><i class="fa fa-check"></i><b>1.2.1</b> Converting from Decimal to Other Number Base</a></li>
+<li class="chapter" data-level="1.2.2" data-path="number-bases-conversion-and-operations.html"><a href="number-bases-conversion-and-operations.html#conversion-with-binary-number"><i class="fa fa-check"></i><b>1.2.2</b> Conversion with Binary Number</a></li>
+<li class="chapter" data-level="1.2.3" data-path="number-bases-conversion-and-operations.html"><a href="number-bases-conversion-and-operations.html#operations-with-binary-number"><i class="fa fa-check"></i><b>1.2.3</b> Operations with Binary Number</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="series-and-sequence.html"><a href="series-and-sequence.html"><i class="fa fa-check"></i><b>2</b> Series and Sequence</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="series-and-sequence.html"><a href="series-and-sequence.html#little-gauss"><i class="fa fa-check"></i><b>2.1</b> Little Gauss</a></li>
+<li class="chapter" data-level="2.2" data-path="series-and-sequence.html"><a href="series-and-sequence.html#sequence"><i class="fa fa-check"></i><b>2.2</b> Sequence</a></li>
+<li class="chapter" data-level="2.3" data-path="series-and-sequence.html"><a href="series-and-sequence.html#series"><i class="fa fa-check"></i><b>2.3</b> Series</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="modular-arithmetic.html"><a href="modular-arithmetic.html"><i class="fa fa-check"></i><b>3</b> Modular Arithmetic</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="modular-arithmetic.html"><a href="modular-arithmetic.html#congruence"><i class="fa fa-check"></i><b>3.1</b> Congruence</a></li>
+<li class="chapter" data-level="3.2" data-path="modular-arithmetic.html"><a href="modular-arithmetic.html#operations-in-modular-arithmetics"><i class="fa fa-check"></i><b>3.2</b> Operations in Modular Arithmetics</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">CM 1015 Computational Mathematics</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="series-and-sequence" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">Chapter 2</span> Series and Sequence<a href="series-and-sequence.html#series-and-sequence" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Reading Materials:
+Croft, A. and R. Davidson <em>Foundation maths.</em> (Harlow: Pearson, 2016) 6th edition. <strong>Chapter 12 Sequences and series.</strong></p>
+<div id="little-gauss" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Little Gauss<a href="series-and-sequence.html#little-gauss" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><em>Skip this section if you have no interest in casual reading.</em></p>
+<p>There is this story that is often told in mathematics classes. While the story itself is likely apocryphal, it likely have some pedagogical value. The story goes this way:</p>
+<p>There was once a German school where a boy Carl Friedrich made mischief during mathematics lesson. Instead of corporal punishment that was common in that time, the teacher instead decided to give him mathematics assignment to keep him busy. He was asked to add up the numbers from one to a hundred. Most students would diligently start adding and be busy for a while. The young Carl Friedrich, on the other hand, answered after a few minutes. The teacher was surprised at the request to speak, since he had just kept the boy busy. He was all the more astonished when Carl Friedrich said that he had finished the task and was even able to say the correct result (5050).</p>
+<p><strong>How had he solved it?</strong></p>
+<p>How he did it so fast? Carl Friedrich discovered discovered the following - unfortunately I do not know what coincidence was behind it. He wrote the numbers down like this:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">1</th>
+<th align="center">2</th>
+<th align="center">3</th>
+<th align="center"><span class="math inline">\(\dots\)</span></th>
+<th align="center">99</th>
+<th align="center">100</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">100</td>
+<td align="center">99</td>
+<td align="center">98</td>
+<td align="center"><span class="math inline">\(\dots\)</span></td>
+<td align="center">2</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p>This still doesn’t look interesting yet. He would then add up the numbers.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">1</th>
+<th align="center">2</th>
+<th align="center">3</th>
+<th align="center"><span class="math inline">\(\dots\)</span></th>
+<th align="center">99</th>
+<th align="center">100</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">100</td>
+<td align="center">99</td>
+<td align="center">98</td>
+<td align="center"><span class="math inline">\(\dots\)</span></td>
+<td align="center">2</td>
+<td align="center">1</td>
+</tr>
+<tr class="even">
+<td align="center">101</td>
+<td align="center">101</td>
+<td align="center">101</td>
+<td align="center"><span class="math inline">\(\dots\)</span></td>
+<td align="center">101</td>
+<td align="center">101</td>
+</tr>
+</tbody>
+</table>
+<p>Each of them have the sum 101. This looks rather promising.</p>
+<p>To sum it up, we write down the numbers from one to one hundred twice, once in increasing order and once in decreasing order, we would then sum them up and we can clearly see that we obtain the sum of <span class="math inline">\(100 \cdot 101\)</span>. But we are not finished yet because we counted each numbers twice so we still have to divide the results by two. Then, we would have the sum of numbers from one to a hundred. And that’s exactly how Carl Friedrich proceeded. Do we know Carl Friedrich? Hopefully that’s the case, because Carl Friedrich was none other than Carl Friedrich Gauss. One of the most important German mathematicians (if not the most important German mathematician).</p>
+<p><strong>Let us talk about the formula</strong></p>
+<p>Mathematicians love formulas or should I say the general solution of a problem. The sum of the first <span class="math inline">\(n\)</span> of natural numbers follows the formula:
+<span class="math display">\[\begin{equation}
+    \Sigma = \frac{n\cdot(n+1)}{2}
+\end{equation}\]</span>
+This is not as complicated as it looks. We could for example count the sum of 1 to 150, then we set <span class="math inline">\(n\)</span> equals to 150.
+<span class="math display">\[\begin{equation}
+    \Sigma = \frac{150\cdot(150+1)}{2}= \frac{150\cdot(151)}{2}= \frac{22650}{2}=11325
+\end{equation}\]</span>
+This formula is today is still affectionately referred as “Der Kleine Gauss”, German for “Little Gauss”. Anyone studying higher mathematics would have to prove the validity of the formula. The formula itself is an arithmetic series. We would learn more about it later.</p>
+</div>
+<div id="sequence" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> Sequence<a href="series-and-sequence.html#sequence" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A sequence is a set of numbers written down in a specific order. For example, 1,3,4,7,9. There need not be an obvious rule relating to the numbers in the sequence. For example, 9, -11, <span class="math inline">\(\frac{1}{2}\)</span>, 32.5 is a sequence.
+A simple way of forming a sequence is to calculate each new term by adding a fixed amount to the previous term. For example, <span class="math inline">\(1,7,13,19, \dots\)</span>.
+Such sequence is called arithmetic progression or arithmetic sequence.</p>
+<p>Geometric progression is a sequence formed by multiplying the previous term by fixed amount. For example, <span class="math inline">\(2,10,50, 250,\dots\)</span>.</p>
+<p>Some sequences continue indefinitely, these are called infinite sequences/ It can happen that as we move along the sequence, the term get closer and closer to a fixed value. For example, <span class="math inline">\(1,\frac{1}{2},\frac{1}{3},\frac{1}{4},\frac{1}{5}, \dots\)</span>.
+This sequence can be rewritten in the form of:</p>
+<p><span class="math display">\[\begin{equation}\label{eq3}
+    x_k = \frac{1}{k} \text{ , for } k = 1, 2,3,4,5,\dots
+\end{equation}\]</span></p>
+<p>As <span class="math inline">\(k\)</span> get larger and larger, and approaches infinity, <span class="math inline">\(x_k\)</span> get closer and closer to zero. We say that <em><span class="math inline">\(\frac{1}{k}\)</span> tends to zero as <span class="math inline">\(k\)</span> tends to infinity</em> or alternatively, <em>as k tends to infinity, the limit of the sequence is zero</em>. We write this down as:
+<span class="math display">\[\begin{equation}\label{eq4}
+\lim_{k \to \infty} \frac{1}{k} = 0
+\end{equation}\]</span>
+When a sequence possess a limit, it is said to <em>converge</em>, when not, it is said to <em>diverge</em>.</p>
+</div>
+<div id="series" class="section level2 hasAnchor" number="2.3">
+<h2><span class="header-section-number">2.3</span> Series<a href="series-and-sequence.html#series" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>If the terms of a sequence are added the result is known as series. A series is a sum. If the series contains a finite number of terms, we are able to add them all up and obtain the sum.</p>
+<p>A series is said to <em>converge</em> if it has finite sum.</p>
+<p>The sum of first <span class="math inline">\(n\)</span> terms of an arithmetic series with first term <span class="math inline">\(a\)</span> and common difference <span class="math inline">\(d\)</span> is denoted by <span class="math inline">\(S-n\)</span> and given by
+<span class="math display">\[\begin{equation}\label{eq5}
+S_n = \frac{n}{2}(2a+(n-1)d)
+\end{equation}\]</span>
+The sum of first <span class="math inline">\(n\)</span> terms of an geometric series with first term <span class="math inline">\(a\)</span> and common ratio <span class="math inline">\(r\)</span> is denoted by <span class="math inline">\(S-n\)</span> and given by
+<span class="math display">\[\begin{equation}\label{eq6}
+S_n = \frac{a(1-r^n)}{1-r} \text{ , for } r \neq 1
+\end{equation}\]</span>
+for <span class="math inline">\(n \to \infty\)</span> and <span class="math inline">\(-1&lt;r&lt;1\)</span>,
+<span class="math display">\[\begin{equation}\label{eq7}
+S_n = \frac{a}{1-r}
+\end{equation}\]</span></p>
+<p>Beware that a converging sequence does not mean it’s sum (series) converges. In our example of <span class="math inline">\(x_k = \frac{1}{k}\)</span>, <span class="math inline">\(x\)</span> converges to zero as <span class="math inline">\(k\)</span> approaches infinity however, the sum of <span class="math inline">\(x\)</span> does not. This is known as <em>Harmonic series</em>. I’m not going to prove it here. You can check yourself <a href="https://proofwiki.org/wiki/Harmonic_Series_is_Divergent">here</a>.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="number-bases-conversion-and-operations.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="modular-arithmetic.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/02-cross-refs.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 3 Modular Arithmetic | CM 1015 Computational Mathematics</title>
+  <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 3 Modular Arithmetic | CM 1015 Computational Mathematics" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 3 Modular Arithmetic | CM 1015 Computational Mathematics" />
+  
+  <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  
+
+<meta name="author" content="John Doe" />
+
+
+<meta name="date" content="2023-06-27" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="series-and-sequence.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">CM 1015 Computational Mathematics</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="1" data-path="number-bases-conversion-and-operations.html"><a href="number-bases-conversion-and-operations.html"><i class="fa fa-check"></i><b>1</b> Number Bases, Conversion and Operations</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="number-bases-conversion-and-operations.html"><a href="number-bases-conversion-and-operations.html#number-bases"><i class="fa fa-check"></i><b>1.1</b> Number Bases</a></li>
+<li class="chapter" data-level="1.2" data-path="number-bases-conversion-and-operations.html"><a href="number-bases-conversion-and-operations.html#number-conversion"><i class="fa fa-check"></i><b>1.2</b> Number Conversion</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="number-bases-conversion-and-operations.html"><a href="number-bases-conversion-and-operations.html#converting-from-decimal-to-other-number-base"><i class="fa fa-check"></i><b>1.2.1</b> Converting from Decimal to Other Number Base</a></li>
+<li class="chapter" data-level="1.2.2" data-path="number-bases-conversion-and-operations.html"><a href="number-bases-conversion-and-operations.html#conversion-with-binary-number"><i class="fa fa-check"></i><b>1.2.2</b> Conversion with Binary Number</a></li>
+<li class="chapter" data-level="1.2.3" data-path="number-bases-conversion-and-operations.html"><a href="number-bases-conversion-and-operations.html#operations-with-binary-number"><i class="fa fa-check"></i><b>1.2.3</b> Operations with Binary Number</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="series-and-sequence.html"><a href="series-and-sequence.html"><i class="fa fa-check"></i><b>2</b> Series and Sequence</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="series-and-sequence.html"><a href="series-and-sequence.html#little-gauss"><i class="fa fa-check"></i><b>2.1</b> Little Gauss</a></li>
+<li class="chapter" data-level="2.2" data-path="series-and-sequence.html"><a href="series-and-sequence.html#sequence"><i class="fa fa-check"></i><b>2.2</b> Sequence</a></li>
+<li class="chapter" data-level="2.3" data-path="series-and-sequence.html"><a href="series-and-sequence.html#series"><i class="fa fa-check"></i><b>2.3</b> Series</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="modular-arithmetic.html"><a href="modular-arithmetic.html"><i class="fa fa-check"></i><b>3</b> Modular Arithmetic</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="modular-arithmetic.html"><a href="modular-arithmetic.html#congruence"><i class="fa fa-check"></i><b>3.1</b> Congruence</a></li>
+<li class="chapter" data-level="3.2" data-path="modular-arithmetic.html"><a href="modular-arithmetic.html#operations-in-modular-arithmetics"><i class="fa fa-check"></i><b>3.2</b> Operations in Modular Arithmetics</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">CM 1015 Computational Mathematics</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="modular-arithmetic" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Modular Arithmetic<a href="modular-arithmetic.html#modular-arithmetic" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Reading Materials:
+Yan, S.Y. <em>Number theory for computing.</em> (Berlin: Springer-Verlag, 2002) 2nd edition. <strong>Section 1.2 Theory of divisibility pp.21-pp.24 , Section 1.6 Theory of congruences pp.111-119</strong></p>
+<div id="congruence" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Congruence<a href="modular-arithmetic.html#congruence" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Modular arithmetic is a system of arithmetic for integers where the number “wraps around” after reaching a certain value we call <strong>modulus</strong></p>
+<p>Modular arithmetic is commonly used in number theory, algebra (group theory, ring theory, etc) and also in cryptography. An example in daily life is the clock. The numbers go from 1 to 12, but when you get to “13 o’clock”, it actually becomes 1 o’clock again (think of how the 24 hour clock numbering works). So 13 becomes 1, 14 becomes 2, and so on. This can keep going, so when you get to “25 o’clock’’, you are actually back round to where 1 o’clock is on the clock face (and also where 13 o’clock was too), this is arithmetic modulo 12.</p>
+<p>In our clock example, the number go from 1 to 12. In formal mathematics, we usually start from 0. In this case our clock would have 12 replaced with zero. Thus,
+<span class="math display">\[\begin{equation}
+24\equiv 0 \mod{12}
+\end{equation}\]</span>
+Two integers <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are said to be <strong>congruent</strong> modulus <span class="math inline">\(k\)</span> if when they are divided by <span class="math inline">\(k\)</span>, they have the same remainder.</p>
+<p>More examples:
+<span class="math display">\[\begin{equation}
+\begin{split}
+3 &amp;\equiv 5 \mod{2}
+\end{split}
+\end{equation}\]</span>
+3 divided by 2 gives 1 with remainder 1, 5 divided by 2 gives 2 with remainder 1.
+<span class="math display">\[\begin{equation}
+\begin{split}
+14 &amp;\equiv 2 \mod{12}
+\end{split}
+\end{equation}\]</span>
+14 divided by 12 gives 1 with remainder 2, 2 divided by 12 gives 0 with remainder 2.</p>
+<p>How about negative numbers? $-17 $ for example:
+<span class="math display">\[\begin{equation}
+\begin{split}
+-17 \mod{12} &amp; \equiv -5\mod{12}\\
+&amp; \equiv 7 \mod{12}
+\end{split}
+\end{equation}\]</span></p>
+</div>
+<div id="operations-in-modular-arithmetics" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Operations in Modular Arithmetics<a href="modular-arithmetic.html#operations-in-modular-arithmetics" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Examples in modulus 12:
+<span class="math display">\[\begin{equation}
+    \begin{split}
+        14+28\equiv 2+4 \equiv 6 &amp; \rightarrow 14+28 \equiv 6\mod{12}\\
+        28-14\equiv 4-2 \equiv 2 &amp; \rightarrow 28-14 \equiv 2\mod{12}\\
+        11+28\equiv 11+4 \equiv 15 \equiv 3 &amp; \rightarrow 11+28 \equiv 3\mod{12}\\
+        14\times28\equiv 2\times4 \equiv 8 &amp; \rightarrow 14\times28 \equiv 8\mod{12}\\
+    \end{split}
+\end{equation}\]</span>
+Division can not be straightforwardly extended. For example, <span class="math inline">\(4\div 12\)</span> is not defined since <span class="math inline">\(12\equiv 0 \mod 12\)</span>. We should first define multiplicative inverse of <span class="math inline">\(\mod k\)</span>.</p>
+<p>Multiplicative inverse <span class="math inline">\(m^{-1}\)</span> of integer <span class="math inline">\(m\)</span> is defined as:
+<span class="math display">\[\begin{equation}
+    m\times m^{-1} = 1 \mod k
+\end{equation}\]</span>
+Then we define <span class="math inline">\(a\div b\)</span> in <span class="math inline">\(\mod k\)</span> as multiplication of <span class="math inline">\(a\times b^{-1}\)</span>. For example:
+<span class="math display">\[\begin{equation}
+    \begin{split}
+        2^{-1} \mod 7 &amp; \\
+        2 \times 4 \equiv 1 \mod 7 &amp; \rightarrow 2^{-1} \mod 7 = 4 \mod 7
+    \end{split}
+\end{equation}\]</span>
+Division example:
+<span class="math display">\[\begin{equation}
+6 \div 2 \mod 7 \equiv 6 \times 2^{-1} \equiv 6\times 4 \equiv 24 \equiv 3 \mod 7
+\end{equation}\]</span>
+Inverse don’t always exist, for example, the inverse of <span class="math inline">\(2 \mod 4\)</span></p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="series-and-sequence.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/03-parts.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+--- 
+title: "CM 1015 Computational Mathematics"
+author: "John Doe"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    df_print: paged
+documentclass: book
+bibliography:
+- book.bib
+- packages.bib
+link-citations: yes
+github-repo: "rstudio/bookdown-demo"
+colorlinks: true
+knit: "bookdown::render_book"
+site: "bookdown::bookdown_site"
+---
+
+# Preface {-}
+
+I wrote this note after finishing the course, so the content might not reflect the current version of the course. It is mostly based on my handwritten personal notes. I personally feel this course should be called "Foundation Mathematics" instead of "Computational Mathematics" because of the lack of "Numerical Methods" and probably some other things people more familiar with the topic would say. If you spot any error please don't hesitate to contact me via slack or mail me.

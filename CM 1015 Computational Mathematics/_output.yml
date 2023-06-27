@@ -1,0 +1,27 @@
+bookdown::gitbook:
+  split_by: rmd
+  split_bib: TRUE
+  highlight: tango
+  config:
+    download: [pdf]
+    sharing:
+      facebook: yes
+      github: yes
+    toc:
+      collapse: section
+      scroll_highlight: yes
+      before: |
+             <p> CM 1015 Computational Mathematics</p>
+      after: |
+              <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+    toolbar:
+      position: static
+      search: yes
+      fontsettings:
+        theme: white
+        family: sans
+        size: 2
+bookdown::pdf_book:
+  latex_engine: xelatex
+  citation_package: natbib
+  keep_tex: yes

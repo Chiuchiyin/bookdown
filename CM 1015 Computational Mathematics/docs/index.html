@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>CM 1015 Computational Mathematics</title>
+  <meta name="description" content="CM 1015 Computational Mathematics" />
+  <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="CM 1015 Computational Mathematics" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="CM 1015 Computational Mathematics" />
+  
+  
+  
+
+<meta name="author" content="John Doe" />
+
+
+<meta name="date" content="2023-06-27" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+
+<link rel="next" href="01-number-bases.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<p> CM 1015 Computational Mathematics</p>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="1" data-path="01-number-bases.html"><a href="01-number-bases.html"><i class="fa fa-check"></i><b>1</b> Number Bases, Conversion and Operations</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="01-number-bases.html"><a href="01-number-bases.html#number-bases"><i class="fa fa-check"></i><b>1.1</b> Number Bases</a></li>
+<li class="chapter" data-level="1.2" data-path="01-number-bases.html"><a href="01-number-bases.html#number-conversion"><i class="fa fa-check"></i><b>1.2</b> Number Conversion</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="01-number-bases.html"><a href="01-number-bases.html#converting-from-decimal-to-other-number-base"><i class="fa fa-check"></i><b>1.2.1</b> Converting from Decimal to Other Number Base</a></li>
+<li class="chapter" data-level="1.2.2" data-path="01-number-bases.html"><a href="01-number-bases.html#conversion-with-binary-number"><i class="fa fa-check"></i><b>1.2.2</b> Conversion with Binary Number</a></li>
+<li class="chapter" data-level="1.2.3" data-path="01-number-bases.html"><a href="01-number-bases.html#operations-with-binary-number"><i class="fa fa-check"></i><b>1.2.3</b> Operations with Binary Number</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="02-series-and-sequence.html"><a href="02-series-and-sequence.html"><i class="fa fa-check"></i><b>2</b> Series and Sequence</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="02-series-and-sequence.html"><a href="02-series-and-sequence.html#little-gauss"><i class="fa fa-check"></i><b>2.1</b> Little Gauss</a></li>
+<li class="chapter" data-level="2.2" data-path="02-series-and-sequence.html"><a href="02-series-and-sequence.html#sequence"><i class="fa fa-check"></i><b>2.2</b> Sequence</a></li>
+<li class="chapter" data-level="2.3" data-path="02-series-and-sequence.html"><a href="02-series-and-sequence.html#series"><i class="fa fa-check"></i><b>2.3</b> Series</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="03-modular-arithmetic.html"><a href="03-modular-arithmetic.html"><i class="fa fa-check"></i><b>3</b> Modular Arithmetic</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="03-modular-arithmetic.html"><a href="03-modular-arithmetic.html#congruence"><i class="fa fa-check"></i><b>3.1</b> Congruence</a></li>
+<li class="chapter" data-level="3.2" data-path="03-modular-arithmetic.html"><a href="03-modular-arithmetic.html#operations-in-modular-arithmetics"><i class="fa fa-check"></i><b>3.2</b> Operations in Modular Arithmetics</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">CM 1015 Computational Mathematics</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="header">
+<h1 class="title">CM 1015 Computational Mathematics</h1>
+<p class="author"><em>John Doe</em></p>
+<p class="date"><em>2023-06-27</em></p>
+</div>
+<div id="preface" class="section level1 unnumbered hasAnchor">
+<h1>Preface<a href="index.html#preface" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>I wrote this note after finishing the course, so the content might not reflect the current version of the course. It is mostly based on my handwritten personal notes. I personally feel this course should be called “Foundation Mathematics” instead of “Computational Mathematics” because of the lack of “Numerical Methods” and probably some other things people more familiar with the topic would say. If you spot any error please don’t hesitate to contact me via slack or mail me.</p>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+<a href="01-number-bases.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["CM 1015 Computational Mathematics.pdf"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+},
+"toolbar": {
+"position": "static",
+"search": true,
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+}
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
