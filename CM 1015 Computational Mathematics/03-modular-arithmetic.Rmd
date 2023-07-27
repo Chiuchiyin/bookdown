@@ -39,7 +39,7 @@ Yan, S.Y. *Number theory for computing.* (Berlin: Springer-Verlag, 2002) 2nd edi
 14 divided by 12 gives 1 with remainder 2, 2 divided by 12 gives 0 with remainder 2.
 
 
-\noindent How about negative numbers? $-17 \mod{12} $ for example:
+\noindent How about negative numbers? $-17 \mod{12}$ for example:
 \begin{equation}
 \begin{split}
 -17 \mod{12} & \equiv -5\mod{12}\\

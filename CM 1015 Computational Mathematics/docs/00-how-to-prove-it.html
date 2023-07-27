@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>CM 1015 Computational Mathematics</title>
-  <meta name="description" content="CM 1015 Computational Mathematics" />
+  <title>How to Prove It | CM 1015 Computational Mathematics</title>
+  <meta name="description" content="How to Prove It | CM 1015 Computational Mathematics" />
   <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="CM 1015 Computational Mathematics" />
+  <meta property="og:title" content="How to Prove It | CM 1015 Computational Mathematics" />
   <meta property="og:type" content="book" />
   
   
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="CM 1015 Computational Mathematics" />
+  <meta name="twitter:title" content="How to Prove It | CM 1015 Computational Mathematics" />
   
   
   
@@ -30,7 +30,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
+<link rel="prev" href="index.html"/>
 <link rel="next" href="01-number-bases.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -76,6 +76,7 @@
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="" data-path="00-how-to-prove-it.html"><a href="00-how-to-prove-it.html"><i class="fa fa-check"></i>How to Prove It</a></li>
 <li class="chapter" data-level="1" data-path="01-number-bases.html"><a href="01-number-bases.html"><i class="fa fa-check"></i><b>1</b> Number Bases, Conversion and Operations</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="01-number-bases.html"><a href="01-number-bases.html#number-bases"><i class="fa fa-check"></i><b>1.1</b> Number Bases</a></li>
@@ -117,14 +118,38 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">CM 1015 Computational Mathematics</h1>
-<p class="author"><em>Kevin Juandi</em></p>
-<p class="date"><em>2023-07-27</em></p>
-</div>
-<div id="preface" class="section level1 unnumbered hasAnchor">
-<h1>Preface<a href="index.html#preface" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>I wrote this note after finishing the course, so the content might not reflect the current version of the course. It is mostly based on my handwritten personal notes. I personally feel this course should be called “Foundation Mathematics” instead of “Computational Mathematics” because of the lack of “Numerical Methods” and probably some other things people more familiar with the topic would say. If you spot any error please don’t hesitate to contact me via slack or mail me.</p>
+<div id="how-to-prove-it" class="section level1 unnumbered hasAnchor">
+<h1>How to Prove It<a href="00-how-to-prove-it.html#how-to-prove-it" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p><img src="Assets/0_W-tEtGVYH9eM9HNx.png" /></p>
+<p>One of the largest stumbling block in studying mathematics is learning how to prove theorems. In this post, I would share with you 3 of the most commonly used technique with at least one step by step example.</p>
+<ol style="list-style-type: decimal">
+<li>Direct proof</li>
+</ol>
+<p>Perhaps the most intuitive and straightforward way to write proofs.<br />
+It goes by “<em>If A, then B</em>” or “<em>A implies B</em>” or mathematically A <span class="math inline">\(\Rightarrow\)</span> B.</p>
+<p>For example:</p>
+<ul>
+<li><em>The sum of two even numbers is also even.</em><br />
+<em>Proof</em>: Let <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> be even numbers. Since they are even, by definition they can be rewritten as <span class="math inline">\(2n\)</span> and <span class="math inline">\(2m\)</span> respectively. Thus, the sum <span class="math inline">\(x+y = 2n+2m = 2(n+m)\)</span>, which is even number by definition.</li>
+<li><em>Third Binomial Formula</em><br />
+<em>Proof</em>:
+<span class="math display">\[\begin{align}
+(a-b)\cdot (a+b)&amp;= a\cdot a+a\cdot b-b \cdot a-b \cdot b\\
+        &amp;= a^2+a \cdot b-b \cdot a-b^2\\
+        &amp;= a^2-b^2
+\end{align}\]</span></li>
+<li><em>Square of odd number is also odd</em><br />
+<em>Proof</em>: Let <span class="math inline">\(x\)</span> be odd numbers. Since it is odd, by definition it can be rewritten as <span class="math inline">\(2n+1\)</span>. Thus the square product <span class="math inline">\(x^2 = (2n+1)^2 = 4n^2+4n+1 = 2(2n^2+2n)+1\)</span> which is an odd number by definition.</li>
+</ul>
+<hr />
+<ol start="2" style="list-style-type: decimal">
+<li>Indirect proof or proof by contradiction</li>
+</ol>
+An elegant way to write a proof that might seem counter intuitive at first. It is also known as proof by contradiction and <em>reductio ad impossibile</em>. It goes the following steps:
+<ol start="3" style="list-style-type: decimal">
+<li>Mathematical Induction</li>
+</ol>
+Mathematical induction is usually taught together with series and sequences. It is a powerful tool to prove series and sequences. It is split into two steps:
 
 </div>
             </section>
@@ -132,8 +157,8 @@
           </div>
         </div>
       </div>
-
-<a href="01-number-bases.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="01-number-bases.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
