@@ -76,4 +76,4 @@ Division example:
 \begin{equation}
 6 \div 2 \mod 7 \equiv 6 \times 2^{-1} \equiv 6\times 4 \equiv 24 \equiv 3 \mod 7
 \end{equation}
-Inverse don't always exist, for example, the inverse of $2 \mod 4$
+Inverse don't always exist, for example, the inverse of $2 \mod 4$.

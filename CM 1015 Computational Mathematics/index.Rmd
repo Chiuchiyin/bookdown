@@ -3,8 +3,19 @@ title: "CM 1015 Computational Mathematics"
 author: "Kevin Juandi"
 date: "`r Sys.Date()`"
 output: 
-  bookdown::gitbook
-  bookdown::pdf_book
+  bookdown::gitbook:
+    config:
+      sharing: 
+        facebook: no
+        twitter: no
+        all: ['facebook', 'twitter', 'whatsapp', 'linkedin']
+      toc:
+        scroll_highlight: yes
+        before: |
+          <li><a href="http://chiuchiyin.xyz/">Home</a></li>
+          <li><a href="./index.html">CM 1015 Computational Mathematics</a></li>
+        after: |
+          <li><a href="https://github.com/rstudio/bookdown">Proudly published with bookdown</a></li>
 documentclass: book
 bibliography:
 - book.bib
@@ -15,7 +26,3 @@ colorlinks: true
 knit: "bookdown::render_book"
 site: "bookdown::bookdown_site"
 ---
-
-# Preface {-}
-
-I wrote this note after finishing the course, so the content might not reflect the current version of the course. It is mostly based on my handwritten personal notes. I personally feel this course should be called "Foundation Mathematics" instead of "Computational Mathematics" because of the lack of "Numerical Methods" and probably some other things people more familiar with the topic would say. If you spot any error please don't hesitate to contact me via slack or mail me.

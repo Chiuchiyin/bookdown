@@ -11,6 +11,11 @@ series
 modular-arithmetic
 congruence
 operations-in-modular-arithmetics
-direct-proof
-indirect-proof-or-proof-by-contradiction
-mathematical-induction
+introduction-to-trigonometry
+right-angle-triangle-properties
+functions-and-kinematics
+trigonometric-functions
+exponential-and-logarithmic-functions
+limit-and-differentiation
+linear-algebra-vector-and-matrices
+combinatorics-and-probability

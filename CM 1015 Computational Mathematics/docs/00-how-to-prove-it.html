@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>How to Prove It | CM 1015 Computational Mathematics</title>
   <meta name="description" content="How to Prove It | CM 1015 Computational Mathematics" />
-  <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
 
   <meta property="og:title" content="How to Prove It | CM 1015 Computational Mathematics" />
   <meta property="og:type" content="book" />
@@ -23,14 +23,14 @@
 <meta name="author" content="Kevin Juandi" />
 
 
-<meta name="date" content="2023-07-27" />
+<meta name="date" content="2024-12-11" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html"/>
+<link rel="prev" href="00-preface.html"/>
 <link rel="next" href="01-number-bases.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -72,10 +72,11 @@
       <nav role="navigation">
 
 <ul class="summary">
-<p> CM 1015 Computational Mathematics</p>
+<li><a href="http://chiuchiyin.xyz/">Home</a></li>
+<li><a href="./index.html">CM 1015 Computational Mathematics</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="" data-path="00-preface.html"><a href="00-preface.html"><i class="fa fa-check"></i>Preface</a></li>
 <li class="chapter" data-level="" data-path="00-how-to-prove-it.html"><a href="00-how-to-prove-it.html"><i class="fa fa-check"></i>How to Prove It</a></li>
 <li class="chapter" data-level="1" data-path="01-number-bases.html"><a href="01-number-bases.html"><i class="fa fa-check"></i><b>1</b> Number Bases, Conversion and Operations</a>
 <ul>
@@ -98,8 +99,18 @@
 <li class="chapter" data-level="3.1" data-path="03-modular-arithmetic.html"><a href="03-modular-arithmetic.html#congruence"><i class="fa fa-check"></i><b>3.1</b> Congruence</a></li>
 <li class="chapter" data-level="3.2" data-path="03-modular-arithmetic.html"><a href="03-modular-arithmetic.html#operations-in-modular-arithmetics"><i class="fa fa-check"></i><b>3.2</b> Operations in Modular Arithmetics</a></li>
 </ul></li>
+<li class="chapter" data-level="4" data-path="04-trigonometry.html"><a href="04-trigonometry.html"><i class="fa fa-check"></i><b>4</b> Introduction to Trigonometry</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="04-trigonometry.html"><a href="04-trigonometry.html#right-angle-triangle-properties"><i class="fa fa-check"></i><b>4.1</b> Right Angle Triangle Properties</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="05-functions.html"><a href="05-functions.html"><i class="fa fa-check"></i><b>5</b> Functions and Kinematics</a></li>
+<li class="chapter" data-level="6" data-path="06-trigo-functions.html"><a href="06-trigo-functions.html"><i class="fa fa-check"></i><b>6</b> Trigonometric Functions</a></li>
+<li class="chapter" data-level="7" data-path="07-exponentials.html"><a href="07-exponentials.html"><i class="fa fa-check"></i><b>7</b> Exponential and Logarithmic Functions</a></li>
+<li class="chapter" data-level="8" data-path="08-diff.html"><a href="08-diff.html"><i class="fa fa-check"></i><b>8</b> Limit and Differentiation</a></li>
+<li class="chapter" data-level="9" data-path="09-linear-algebra.html"><a href="09-linear-algebra.html"><i class="fa fa-check"></i><b>9</b> Linear Algebra, Vector and Matrices</a></li>
+<li class="chapter" data-level="10" data-path="10-combinatorics.html"><a href="10-combinatorics.html"><i class="fa fa-check"></i><b>10</b> Combinatorics and Probability</a></li>
 <li class="divider"></li>
-<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+<li><a href="https://github.com/rstudio/bookdown">Proudly published with bookdown</a></li>
 
 </ul>
 
@@ -129,27 +140,87 @@
 It goes by “<em>If A, then B</em>” or “<em>A implies B</em>” or mathematically A <span class="math inline">\(\Rightarrow\)</span> B.</p>
 <p>For example:</p>
 <ul>
-<li><em>The sum of two even numbers is also even.</em><br />
-<em>Proof</em>: Let <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> be even numbers. Since they are even, by definition they can be rewritten as <span class="math inline">\(2n\)</span> and <span class="math inline">\(2m\)</span> respectively. Thus, the sum <span class="math inline">\(x+y = 2n+2m = 2(n+m)\)</span>, which is even number by definition.</li>
-<li><em>Third Binomial Formula</em><br />
+<li><p><em>The sum of two even numbers is also even.</em><br />
+<em>Proof</em>: Let <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> be even numbers. Since they are even, by definition they can be rewritten as <span class="math inline">\(2n\)</span> and <span class="math inline">\(2m\)</span> respectively. Thus, the sum <span class="math inline">\(x+y = 2n+2m = 2(n+m)\)</span>, which is even number by definition.</p></li>
+<li><p><a href="https://www.math.utah.edu/online/1010/binom/"><em>Third Binomial Formula</em></a>
+<span class="math display">\[\begin{equation}
+    (a-b)\cdot (a+b) = a^2-b^2
+\end{equation}\]</span><br />
 <em>Proof</em>:
 <span class="math display">\[\begin{align}
 (a-b)\cdot (a+b)&amp;= a\cdot a+a\cdot b-b \cdot a-b \cdot b\\
         &amp;= a^2+a \cdot b-b \cdot a-b^2\\
         &amp;= a^2-b^2
-\end{align}\]</span></li>
-<li><em>Square of odd number is also odd</em><br />
-<em>Proof</em>: Let <span class="math inline">\(x\)</span> be odd numbers. Since it is odd, by definition it can be rewritten as <span class="math inline">\(2n+1\)</span>. Thus the square product <span class="math inline">\(x^2 = (2n+1)^2 = 4n^2+4n+1 = 2(2n^2+2n)+1\)</span> which is an odd number by definition.</li>
+\end{align}\]</span></p></li>
+<li><p><em>Square of odd number is also odd</em><br />
+<em>Proof</em>: Let <span class="math inline">\(x\)</span> be odd numbers. Since it is odd, by definition it can be rewritten as <span class="math inline">\(2n+1\)</span>. Thus the square product <span class="math inline">\(x^2 = (2n+1)^2 = 4n^2+4n+1 = 2(2n^2+2n)+1\)</span> which is an odd number by definition.</p></li>
 </ul>
 <hr />
 <ol start="2" style="list-style-type: decimal">
 <li>Indirect proof or proof by contradiction</li>
 </ol>
-An elegant way to write a proof that might seem counter intuitive at first. It is also known as proof by contradiction and <em>reductio ad impossibile</em>. It goes the following steps:
+<p>An elegant way to write a proof that might seem counter intuitive at first. It is also known as proof by contradiction and <em>reductio ad impossibile</em>. It goes the following steps:</p>
+<ol>
+<li>Assume the proposition to be proved is false</li>
+<li>Then show that the assumption leads to mutually contradictory assertion</li>
+<li>Since the assumption that the proposition is false proved contradictory, then the proposition must be true</li>
+</ol>
+<p>For example:</p>
+<ul>
+<li><p><a href="https://youtu.be/qb75FmAdd0Y"><em><span class="math inline">\(\sqrt{2}\)</span> is irrational</em></a><br />
+<em>Proof</em>:Let there be <span class="math inline">\(p\)</span> such that <span class="math inline">\(p^2=2\)</span>.
+If <span class="math inline">\(p\)</span> is rational, we could write <span class="math inline">\(p = \frac{m}{n}\)</span> where <span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span> are integers that are not both even.
+This is then implies that <span class="math inline">\(m^2=2n^2\)</span> and thus <span class="math inline">\(m^2\)</span> is even. If <span class="math inline">\(m^2\)</span> is even, <span class="math inline">\(m\)</span> must be even too. Because <span class="math inline">\(m\)</span> is even, <span class="math inline">\(m^2\)</span> is divisible by 4 which in turn implies that <span class="math inline">\(n^2\)</span> is even and therefore <span class="math inline">\(n\)</span> is even.
+This contradicts with our earlier assumption that <span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span> are integers that are not both even and therefore, a rational <span class="math inline">\(p\)</span> could not exist.</p></li>
+<li><p><em>There exist no integers a and b for which <span class="math inline">\(6a + 3b = 1\)</span></em><br />
+<em>Proof</em>:Let us first assume that such <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> exist.
+Dividing by 3 gives us: <span class="math inline">\(2a+b=\frac{1}{3}\)</span>
+which is a contradiction since <span class="math inline">\(2a+b\)</span> is an integer but <span class="math inline">\(\frac{1}{3}\)</span> is not. Therefore there exist no such integers <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span></p></li>
+</ul>
+<hr />
 <ol start="3" style="list-style-type: decimal">
 <li>Mathematical Induction</li>
 </ol>
-Mathematical induction is usually taught together with series and sequences. It is a powerful tool to prove series and sequences. It is split into two steps:
+<p>Mathematical induction is usually taught together with series and sequences. It is a powerful tool to prove series and sequences. It is split into two steps:</p>
+<ol>
+<li>Initial case: prove that the statement holds for 0 and or 1</li>
+<li>Induction step: assume that if the statement holds for some arbitrary natural number <span class="math inline">\(n\)</span>, then prove that it also holds for <span class="math inline">\(n+1\)</span></li>
+</ol>
+<p>For example:</p>
+<ul>
+<li><em><a href="02-series-and-sequence.html#little-gauss">Little Gauss</a> (Sum of Arithmetic Sequence)</em>
+<span class="math display">\[\begin{equation}
+\sum_{i=1}^n i= \frac{n\cdot(n+1)}{2}
+\end{equation}\]</span>
+<em>Proof</em>:
+<ul>
+<li><p><em>Initiation step</em> for <span class="math inline">\(n = 1\)</span>:
+For the left side:
+<span class="math display">\[\begin{equation}
+\sum_{i=1}^n i= 1
+\end{equation}\]</span>
+And the right side:
+<span class="math display">\[\begin{equation}
+\frac{1\cdot(1+1)}{2}=1
+\end{equation}\]</span>
+We obtain the same value from both sides, therefore equation holds for <span class="math inline">\(n = 1\)</span>.</p></li>
+<li><p><em>Induction step</em> from <span class="math inline">\(n\)</span> to <span class="math inline">\(n+1\)</span>:
+Assume that the statement holds for some arbitrary natural number <span class="math inline">\(n\)</span>, then for <span class="math inline">\(n+1\)</span>,
+For the left side:
+<span class="math display">\[\begin{equation}
+\sum_{i=1}^{n+1} i= \frac{(n+1)\cdot(n+2)}{2}
+\end{equation}\]</span>
+And the right side:
+<span class="math display">\[\begin{align}
+\frac{n\cdot(n+1)}{2}+(n+1) &amp;= \frac{n\cdot(n+1)+2\cdot(n+1)}{2}\\
+                          &amp;= \frac{n^2+n+2n+2}{2}\\
+                          &amp;= \frac{n^2+3n+2}{2}\\
+                          &amp;= \frac{(n+1)\cdot(n+2)}{2}
+\end{align}\]</span>
+We obtain the same value from both sides, therefore equation holds for <span class="math inline">\(n+1\)</span>. Since both the base case and the induction step have been proved as true, by mathematical induction the statement holds for every natural number <span class="math inline">\(n\)</span>.</p></li>
+</ul></li>
+</ul>
+<p>More examples will be added in the future</p>
 
 </div>
             </section>
@@ -157,7 +228,7 @@ Mathematical induction is usually taught together with series and sequences. It 
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="00-preface.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 <a href="01-number-bases.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
@@ -173,15 +244,15 @@ Mathematical induction is usually taught together with series and sequences. It 
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
 "sharing": {
-"github": true,
-"facebook": true,
-"twitter": true,
+"github": false,
+"facebook": false,
+"twitter": false,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
 "vk": false,
 "whatsapp": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+"all": ["facebook", "twitter", "whatsapp", "linkedin"]
 },
 "fontsettings": {
 "theme": "white",
@@ -200,7 +271,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["CM 1015 Computational Mathematics.pdf"],
+"download": null,
 "search": {
 "engine": "fuse",
 "options": null
@@ -210,13 +281,7 @@ gitbook.start({
 "scroll_highlight": true
 },
 "toolbar": {
-"position": "static",
-"search": true,
-"fontsettings": {
-"theme": "white",
-"family": "sans",
-"size": 2
-}
+"position": "static"
 }
 });
 });

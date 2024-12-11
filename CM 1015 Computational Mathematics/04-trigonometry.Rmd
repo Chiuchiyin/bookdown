@@ -1,0 +1,12 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
+#  Introduction to Trigonometry
+
+Reading Materials: \newline
+Croft, A. and R. Davidson *Foundation maths.* (Harlow: Pearson, 2016) 6th edition. **Chapter 22 Introduction to trigonometry.**
+
+
+## Right Angle Triangle Properties

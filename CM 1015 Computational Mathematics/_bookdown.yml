@@ -6,7 +6,15 @@ language:
   ui:
     chapter_name: "Chapter "
 rmd_files: ["index.Rmd",
+"00-preface.Rmd",
 "00-how-to-prove-it.Rmd",
-            "01-number-bases.Rmd",
-           "02-series-and-sequence.Rmd",
-           "03-modular-arithmetic.Rmd"]
+"01-number-bases.Rmd",
+"02-series-and-sequence.Rmd",
+"03-modular-arithmetic.Rmd",
+"04-trigonometry.Rmd",
+"05-functions.Rmd",
+"06-trigo-functions.Rmd",
+"07-exponentials.Rmd",
+"08-diff.Rmd",
+"09-linear-algebra.Rmd",
+"10-combinatorics.Rmd"]
