@@ -135,7 +135,7 @@ The reverse is much simpler.
 \end{split}
 \end{equation} 
 
-### Operations with Binary Number
+## Operations with Binary Number
 
 **Addition**
 
