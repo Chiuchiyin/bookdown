@@ -8,11 +8,9 @@ output:
 Reading Materials: \newline
 Croft, A. and R. Davidson *Foundation maths.* (Harlow: Pearson, 2016) 6th edition. **Chapter 12 Sequences and series.**
 
-## Little Gauss
+## Little Gauss (optional)
 
-*Skip this section if you have no interest in casual reading.*
-
-
+*Not required for this course, but a well known story.*
 
 \noindent There is this story that is often told in mathematics classes. While the story itself is likely apocryphal, it likely have some pedagogical value. The story goes this way:
 
@@ -96,7 +94,7 @@ This sequence can be rewritten in the form of:
 
 \vspace{5mm}
 
-\noindent The sum of first $n$ terms of an arithmetic series with first term $a$ and common difference $d$ is denoted by $S-n$ and given by
+\noindent The sum of first $n$ terms of an arithmetic series with first term $a$ and common difference $d$ is denoted by $S_n$ and given by
 \begin{equation}\label{eq5}
 S_n = \frac{n}{2}(2a+(n-1)d)
 \end{equation}
@@ -109,4 +107,32 @@ S_n = \frac{a(1-r^n)}{1-r} \text{ , for } r \neq 1
 S_n = \frac{a}{1-r}
 \end{equation}
 
-\noindent Beware that a converging sequence does not mean it's sum (series) converges. In our example of $x_k = \frac{1}{k}$, $x$ converges to zero as $k$ approaches infinity however, the sum of $x$ does not. This is known as *Harmonic series*. I'm not going to prove it here. You can check yourself [here](https://proofwiki.org/wiki/Harmonic_Series_is_Divergent).
+\noindent Beware that a converging sequence does not mean it's sum (series) converges. 
+
+\begin{equation}
+\lim_{k \to \infty} x_k = 0 \nRightarrow \sum_{k=1}^\infty x_k \text{ converges.}
+\end{equation}
+
+In our example of $x_k = \frac{1}{k}$, $x$ converges to zero as $k$ approaches infinity however, the sum of $x$ does not. This is known as *Harmonic series*. I'm not going to prove it here. You can check yourself [here](https://proofwiki.org/wiki/Harmonic_Series_is_Divergent).
+
+## Recursive Sequences
+
+Not all sequences are given by a simple formula. Some are defined by
+recurrence relations, where each term is expressed in terms of previous terms.
+This is called a *recursive sequence*.
+
+**Example 1: Arithmetic progression (recursive form).**  
+The sequence \(1, 4, 7, 10, \dots\) can be defined recursively as:
+\[
+u_1 = 1, \quad u_{n+1} = u_n + 3
+\]
+
+**Example 2: Fibonacci sequence.**  
+The famous Fibonacci sequence is defined by:
+\[
+F_1 = 1, \; F_2 = 1, \quad F_{n+2} = F_{n+1} + F_n
+\]
+giving \(1, 1, 2, 3, 5, 8, \dots\)
+
+Recursive definitions are powerful, but sometimes it is useful to find an
+*explicit formula* for the \(n\)-th term instead of calculating step by step.

@@ -60,6 +60,50 @@ Consider the binary number $110101_2$. As the base is 2, this means that power o
 \end{split}
 \end{equation} 
 
+**General Formula for Numbers in Any Base**
+
+A number in any base $b$ can be represented using a general formula that is essentially a weighted sum of its digits, where each weight is a power of the base. For a number $N$ with integer and fractional parts, expressed in base $b$ as $d_n d_{n-1} \dots d_1 d_0 . d_{-1} d_{-2} \dots d_{-m}$, the value of the number can be calculated using the following formula:
+
+\begin{equation}
+N = \sum_{i=0}^{n} d_i b^i + \sum_{j=1}^{m} d_{-j} b^{-j}
+\end{equation}
+
+Let's break down this formula:
+
+* **$N$**: This is the value of the number in base 10 (decimal).
+* **$b$**: This is the base of the number system (e.g., 2 for binary, 8 for octal, 10 for decimal, 16 for hexadecimal).
+* **$d_i$**: This represents the digit at position $i$ to the left of the decimal point. The positions are indexed starting from 0, so $d_0$ is the digit right before the decimal point, $d_1$ is the digit to its left, and so on.
+* **$d_{-j}$**: This represents the digit at position $j$ to the right of the decimal point. The positions are indexed starting from 1, so $d_{-1}$ is the first digit after the decimal point, $d_{-2}$ is the second, and so on.
+* **$b^i$**: This is the weight for the integer part of the number. Each digit $d_i$ is multiplied by the base raised to the power of its position.
+* **$b^{-j}$**: This is the weight for the fractional part of the number. Each digit $d_{-j}$ is multiplied by the base raised to a negative power of its position.
+* **$\sum_{i=0}^{n} d_i b^i$**: This is the sum of the products of each digit in the integer part and its corresponding power of the base.
+* **$\sum_{j=1}^{m} d_{-j} b^{-j}$**: This is the sum of the products of each digit in the fractional part and its corresponding negative power of the base.
+
+## Why different bases matter? (optional)
+
+*Not required for this course, but useful to know.*
+
+At its core, the reason we use different number bases is **efficiency and human readability**. Computers fundamentally operate using **binary (base-2)** because their hardware (transistors, logic gates) can most easily represent two states: on (1) and off (0). However, writing out and interpreting long strings of 1s and 0s is extremely tedious and error-prone for humans.
+
+This is where **octal (base-8)** and **hexadecimal (base-16)** become essential. They serve as a **shorthand for binary**, allowing us to represent large binary numbers in a much more compact, readable, and manageable form.
+
+### Comparison of Typical Use Cases
+
+| Number Base | Typical Use Cases | Key Advantage | Example (Value = 255 in Decimal) |
+| :--- | :--- | :--- | :--- |
+| **Binary (Base-2)** | • CPU instruction sets<br>• Memory addressing<br>• Digital logic circuits<br>• Boolean algebra / Bitmasking | The **native language of hardware**. Directly represents the on/off state of electrical circuits. | `11111111` |
+| **Octal (Base-8)** | • **Historical systems** (e.g., PDP-8, Unix file permissions)<br>• Occasionally in aviation (e.g., transponder codes) | Provides a more compact shorthand than binary for systems where the word size is divisible by 3. | `377` |
+| **Hexadecimal (Base-16)** | • **Memory addresses**<br>• **Machine code / Assembly language**<br>• **Representing raw data** (e.g., color codes #RRGGBB, network MAC addresses)<br>• **Debugging** and reverse engineering | The **primary shorthand for binary**. One digit represents a 4-bit nibble, making it extremely compact and easy to convert to/from binary. | `FF` |
+
+In summary: **Binary** is for machines, **decimal** is for people, and **hex/octal** are the crucial bridges that allow developers and engineers to work with machine-level data efficiently. Hexadecimal has become the undisputed standard for this role in modern computing.
+
+
+### Why They're Important
+
+Binary is essential because it's the only language that computers understand. However, a single byte (8 bits) of binary data, like `01011010`, can be hard for a person to read, write, and remember. That's where octal and hexadecimal come in as **shorthand notations**. They group binary digits into larger chunks, making long binary strings more manageable.
+
+For example, the 8-bit binary number `11111010` is represented as `372` in octal and `FA` in hexadecimal. Both octal and hexadecimal are significantly shorter and less prone to human error than their binary equivalent. **Hexadecimal is now the preferred standard** because a single hexadecimal digit corresponds to exactly four binary digits (a nibble), which aligns perfectly with the byte (8 bits) and word (16, 32, or 64 bits) architectures common in modern computing. This makes it ideal for tasks like **memory addressing**, **color representation** in web development (e.g., `#FF5733`), and debugging.
+
 ## Number Conversion
 
 ### Converting from Decimal to Other Number Base
@@ -100,7 +144,7 @@ From here we compare the number that we are going to convert with the list:
 \end{equation} 
 Thus, $253_{10}$ is $11111101_2$ in binary. Like the other method, we can also do this to convert to other number bases.
 
-### Conversion with Binary Number
+### Conversion Shortcuts with Binary Number
 
 \noindent Converting binary numbers to Octal or Hexadecimal and vice versa are very straightforward. It can be performed without converting to Decimal first. Let us use number $11100110_2$ as example:
 \begin{equation} \label{eq7}
@@ -109,8 +153,9 @@ Thus, $253_{10}$ is $11111101_2$ in binary. Like the other method, we can also d
 \underbrace{1110}_\text{E}\underbrace{0110}_\text{6} & = \text{E}6_{16}
 \end{split}
 \end{equation}
-\subsection{Non-integer Number Conversion}
-Converting non-integer number might look counterintuitive and intimidating. It is actually rather simple. Let us convert $17.375_{10}$ to binary.
+
+### Non-integer Number Conversion
+Converting non-integer number might look counter-intuitive and intimidating. It is actually rather simple. Let us convert $17.375_{10}$ to binary.
 \[\begin{split}
 17.375 & = 10 + 7 + 0.3+0.07+0.005 \\
 & = 1(10^1) + 7(10^0) + 3(10^{-1}) + 7(10^{-2})+5(10^{-3})
@@ -133,7 +178,7 @@ The reverse is much simpler.
 & = 8 + 4 + 1+ 0.5+0.125 \\
 & = 13.625_{10}
 \end{split}
-\end{equation} 
+\end{equation}
 
 ## Operations with Binary Number
 
@@ -209,3 +254,40 @@ The reverse is much simpler.
 \begin{equation} \label{eq17}
 	\underbrace{11100110}_\text{230}\div\underbrace{110}_\text{12} = \underbrace{100110}_\text{38} \text{ with remainder }\underbrace{10}_\text{2}
 \end{equation}
+
+## Negative Numbers in Binary (optional)
+
+*Not required for this course, but useful to know.*
+
+So far, we have only worked with **unsigned binary numbers**, which can represent non-negative integers.  
+To handle negative values, computers use special representations. The three most common are:
+
+1. **Sign-and-Magnitude**
+
+   * The most significant bit (MSB) is the **sign bit**: `0` for positive, `1` for negative.
+   * Example (with 4 bits):
+
+     * `0101₂ = +5`
+     * `1101₂ = -5`
+   * Drawback: arithmetic becomes complicated (two versions of zero).
+
+2. **One’s Complement**
+
+   * Negative numbers are formed by **inverting all bits** of the positive number.
+   * Example (4 bits):
+
+     * `0101₂ = +5`
+     * `1010₂ = -5` (one’s complement of 0101)
+   * Still has two versions of zero: `0000` and `1111`.
+
+3. **Two’s Complement**
+
+   * Negative numbers are formed by **inverting all bits and adding 1**.
+   * Example (4 bits):
+
+     * `0101₂ = +5`
+     * Invert → `1010₂`
+     * Add 1 → `1011₂ = -5`
+   * Only one zero, and arithmetic works cleanly with addition/subtraction.
+   
+**Two's complement** is the most widely used method for representing negative numbers in computer systems. It overcomes the limitations of the previous two methods by providing a single representation for zero and simplifying arithmetic operations, allowing subtraction to be performed as addition.

@@ -1,7 +1,12 @@
 h1:number-bases-conversion-and-operations Number Bases, Conversion and Operations
 h2:number-bases Number Bases
+h2:why-different-bases-matter-optional Why different bases matter? (optional)
+h3:comparison-of-typical-use-cases Comparison of Typical Use Cases
+h3:why-theyre-important Why They’re Important
 h2:number-conversion Number Conversion
 h3:converting-from-decimal-to-other-number-base Converting from Decimal to Other Number Base
-h3:conversion-with-binary-number Conversion with Binary Number
+h3:conversion-shortcuts-with-binary-number Conversion Shortcuts with Binary Number
+h3:non-integer-number-conversion Non-integer Number Conversion
 h2:operations-with-binary-number Operations with Binary Number
+h2:negative-numbers-in-binary-optional Negative Numbers in Binary (optional)
 

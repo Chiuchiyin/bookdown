@@ -1,6 +1,6 @@
 --- 
 title: "CM 1015 Computational Mathematics"
-author: "Kevin Juandi"
+author: "Chiuchiyin"
 date: "`r Sys.Date()`"
 output: 
   bookdown::gitbook:

@@ -77,3 +77,48 @@ Division example:
 6 \div 2 \mod 7 \equiv 6 \times 2^{-1} \equiv 6\times 4 \equiv 24 \equiv 3 \mod 7
 \end{equation}
 Inverse don't always exist, for example, the inverse of $2 \mod 4$.
+
+## Fermat's Little Theorem (optional)
+
+*Not required for this course, but useful to know.*
+
+Fermat's Little Theorem is one of the most important results in modular arithmetic, especially in cryptography.
+
+If \(p\) is a prime number and \(a\) is an integer not divisible by \(p\), then
+\begin{equation}
+a^{p-1} \equiv 1 \pmod{p}.
+\end{equation}
+
+\noindent Equivalently,
+\begin{equation}
+a^p \equiv a \pmod{p}, \quad \text{for all integers } a.
+\end{equation}
+
+Applications
+
+1. **Quick Computation of Inverses:**  
+   If \(\gcd(a,p)=1\), then
+   \[
+   a^{p-2} \equiv a^{-1} \pmod{p}.
+   \]
+   For example, the inverse of \(3 \pmod{7}\):
+   \[
+   3^{7-2} = 3^5 = 243 \equiv 5 \pmod{7}.
+   \]
+
+2. **Simplifying Exponentiation:**  
+   Fermat’s theorem reduces large exponents modulo \(p\).  
+   Example: Compute \(7^{222} \pmod{13}\).  
+   Since \(13\) is prime,  
+   \[
+   7^{12} \equiv 1 \pmod{13}.
+   \]  
+   Then,
+   \[
+   222 \equiv 6 \pmod{12}, \quad \Rightarrow \quad 7^{222} \equiv 7^6 \pmod{13}.
+   \]  
+   Calculating,
+   \[
+   7^2 = 49 \equiv 10, \quad 7^4 \equiv 10^2 = 100 \equiv 9, \quad 7^6 \equiv 9 \times 10 = 90 \equiv 12 \pmod{13}.
+   \]
+
