@@ -8,6 +8,347 @@ output:
 Reading Materials: \newline
 Croft, A. and R. Davidson *Foundation maths.* (Harlow: Pearson, 2016) 6th edition. **Chapter 22 Introduction to trigonometry.**
 
+## Angles
 
-## Right Angle Triangle Properties
+An **angle** is the measure of separation between two rays that share a common starting point (vertex).
 
+### Units of Measurement
+
+* **Degrees (°)**:
+
+  * 1 flat angle = 180°
+  * 1 complete angle = 360°
+  * 1° = 60 minutes (′)
+  * 1′ = 60 seconds (″)
+
+* **Radians**:
+
+  * Defined using the arc of a circle:
+
+    $$
+    1 \text{ radian} = \frac{\text{arc length}}{\text{radius}}
+    $$
+  * A complete circle = $2\pi$ radians = 360°
+
+* **Conversion formulas**:
+
+  $$
+  \text{radians} = \text{degrees} \times \frac{\pi}{180}, \quad 
+  \text{degrees} = \text{radians} \times \frac{180}{\pi}
+  $$
+
+### Special Angles
+
+* Right angle = 90°
+* Flat angle = 180°
+* Complete angle = 360° (same as 0° because of periodicity)
+
+### Key Property
+
+* **Angles are periodic**:
+
+  * Every 360° (or $2\pi$ radians), angles repeat.
+  * Example: 0° ≡ 360° ≡ 720°, etc.
+
+
+## Triangles
+
+**Definition**
+
+* A **triangle** is a polygon with **three sides** and **three angles**.
+* The sum of the interior angles of a triangle is always:
+
+  $$
+  180^\circ \; \; \text{(or } \pi \text{ radians)}
+  $$
+
+**Classification by Sides**
+
+* **Equilateral**: 3 equal sides, 3 equal angles (each 60°).
+* **Isosceles**: 2 equal sides, 2 equal angles.
+* **Scalene**: no equal sides, no equal angles.
+
+**Classification by Angles**
+
+* **Acute triangle**: all angles < 90°.
+* **Right triangle**: one angle = 90°.
+* **Obtuse triangle**: one angle > 90°.
+
+**Exterior Angle Theorem**
+
+* An **exterior angle** of a triangle equals the **sum of the two opposite interior angles**:
+
+  $$
+  \text{Exterior angle} = \text{Angle}_1 + \text{Angle}_2
+  $$
+
+**Triangle Inequality**
+
+For any triangle with sides $a, b, c$:
+
+$$
+a + b > c, \quad b + c > a, \quad c + a > b
+$$
+
+* The **sum of the lengths of any two sides** must be **greater than** the third side.
+* This condition ensures the three sides can actually form a triangle.
+
+**Special case:**
+
+* If $a + b = c$, the points are **collinear** (they lie on a straight line), so no triangle is formed.
+
+
+### Special Triangles
+
+**1. Equilateral Triangle**
+
+* All sides are equal: $a = b = c$
+* All angles are equal: $60^\circ$ each
+* Height formula:
+
+  $$
+  h = \frac{\sqrt{3}}{2}a
+  $$
+* Area:
+
+  $$
+  A = \frac{\sqrt{3}}{4}a^2
+  $$
+
+---
+
+**2. Isosceles Triangle**
+
+* Two equal sides: $a = b \neq c$
+* Two equal base angles.
+* If base = $c$, height from apex bisects base:
+
+  $$
+  h = \sqrt{a^2 - \left(\frac{c}{2}\right)^2}
+  $$
+
+---
+
+**3. Right Triangle**
+
+* One angle = $90^\circ$.
+* Sides:
+
+  * Hypotenuse = longest side (opposite right angle).
+  * Legs = other two sides.
+* Area:
+
+  $$
+  A = \frac{1}{2} \times \text{(base)} \times \text{(height)}
+  $$
+* Foundation for **Pythagoras’ Theorem** (next section).
+
+### Similar Triangles
+
+**Definition**
+
+Two triangles are **similar** if they have the same shape but not necessarily the same size.
+
+* Corresponding angles are equal.
+* Corresponding sides are proportional.
+
+**Notation**
+
+$$
+\triangle ABC \sim \triangle DEF
+$$
+
+means $\angle A = \angle D, \; \angle B = \angle E, \; \angle C = \angle F$ and
+
+$$
+\frac{AB}{DE} = \frac{BC}{EF} = \frac{CA}{FD}
+$$
+
+**Conditions for Similarity**
+
+Two triangles are similar if:
+
+1. **AA (Angle-Angle):** Two pairs of angles are equal.
+2. **SSS (Side-Side-Side):** Ratios of all three pairs of sides are equal.
+3. **SAS (Side-Angle-Side):** Ratios of two sides are equal and the included angle is equal.
+
+**Property**
+
+* Ratio of areas of two similar triangles equals the **square of the ratio of corresponding sides**:
+
+$$
+\frac{\text{Area}_1}{\text{Area}_2} = \left(\frac{\text{Side}_1}{\text{Side}_2}\right)^2
+$$
+
+### Pythagoras' Theorem
+
+**Statement**
+
+In a right-angled triangle:
+
+$$
+a^2 + b^2 = c^2
+$$
+
+* $a, b$ = legs (sides adjacent to right angle)
+* $c$ = hypotenuse (side opposite the right angle, longest side)
+
+
+**Pythagorean Triples**
+
+* Integer solutions to $a^2 + b^2 = c^2$.
+* Common examples:
+
+  * (3, 4, 5)
+  * (5, 12, 13)
+  * (8, 15, 17)
+* Multiples also work (e.g., 6, 8, 10).
+
+
+## Trigonometric Relations
+
+### Basic Ratios (Right Triangles)
+
+For a right triangle with:
+
+* Angle $\theta$
+* Opposite side = $O$
+* Adjacent side = $A$
+* Hypotenuse = $H$
+
+$$
+\sin \theta = \frac{O}{H}, \quad
+\cos \theta = \frac{A}{H}, \quad
+\tan \theta = \frac{O}{A}
+$$
+
+**Mnemonic:**
+ **SOH-CAH-TOA**
+
+* **S**ine = **O**pposite / **H**ypotenuse
+* **C**osine = **A**djacent / **H**ypotenuse
+* **T**angent = **O**pposite / **A**djacent
+
+---
+
+### Pythagorean Identities
+
+$$
+\sin^2 \theta + \cos^2 \theta = 1
+$$
+
+$$
+1 + \tan^2 \theta = \sec^2 \theta
+$$
+
+$$
+1 + \cot^2 \theta = \csc^2 \theta
+$$
+
+---
+
+### Special Angles (Summary Table)
+
+| Angle      | $\sin \theta$         | $\cos \theta$         | $\tan \theta$         |
+| ---------- | --------------------- | --------------------- | --------------------- |
+| $0^\circ$  | 0                     | 1                     | 0                     |
+| $30^\circ$ | $\tfrac{1}{2}$        | $\tfrac{\sqrt{3}}{2}$ | $\tfrac{1}{\sqrt{3}}$ |
+| $45^\circ$ | $\tfrac{1}{\sqrt{2}}$ | $\tfrac{1}{\sqrt{2}}$ | 1                     |
+| $60^\circ$ | $\tfrac{\sqrt{3}}{2}$ | $\tfrac{1}{2}$        | $\sqrt{3}$            |
+| $90^\circ$ | 1                     | 0                     | undefined ($\infty$)  |
+
+---
+
+### Law of Sines
+
+$$
+\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C}
+$$
+
+### Law of Cosines
+
+$$
+c^2 = a^2 + b^2 - 2ab\cos C
+$$
+
+
+
+```{r echo=FALSE, fig.cap="Right-angled triangle ABC"}
+library(ggplot2)
+library(ggforce)
+
+# Triangle vertices
+triangle <- data.frame(
+  name = c("A", "B", "C"),
+  x = c(0, 3, 1.5),
+  y = c(0, 0, 2.5)
+)
+
+triangle_closed <- rbind(triangle, triangle[1,])
+
+# ---- Compute side lengths ----
+dist <- function(p1, p2) sqrt((p1$x - p2$x)^2 + (p1$y - p2$y)^2)
+a <- dist(triangle[2,], triangle[3,]) # opposite A
+b <- dist(triangle[1,], triangle[3,]) # opposite B
+c <- dist(triangle[1,], triangle[2,]) # opposite C
+
+# Directions of incident sides at each vertex (radians)
+ang <- function(y, x) atan2(y, x)
+dirAB <- ang(triangle$y[2]-triangle$y[1], triangle$x[2]-triangle$x[1])
+dirAC <- ang(triangle$y[3]-triangle$y[1], triangle$x[3]-triangle$x[1])
+dirBA <- ang(triangle$y[1]-triangle$y[2], triangle$x[1]-triangle$x[2])
+dirBC <- ang(triangle$y[3]-triangle$y[2], triangle$x[3]-triangle$x[2])
+dirCA <- ang(triangle$y[1]-triangle$y[3], triangle$x[1]-triangle$x[3])
+dirCB <- ang(triangle$y[2]-triangle$y[3], triangle$x[2]-triangle$x[3])
+
+angles <- data.frame(
+  x0 = triangle$x,
+  y0 = triangle$y,
+  r  = 0.40,
+  start = c(dirAB, dirBA, dirCA),
+  end   = c(dirAC, dirBC, dirCB),
+  label = c("α", "β", "γ")
+)
+
+# ---- Fix: force the shorter interior arc ----
+short_arc <- function(s, e) {
+  d <- (e - s) %% (2*pi)         # ccw sweep in [0, 2π)
+  if (d > pi) {                   # long way -> go the other way
+    c(start = e, end = e + (2*pi - d))
+  } else {
+    c(start = s, end = s + d)
+  }
+}
+se <- t(mapply(short_arc, angles$start, angles$end))
+angles$start <- se[, "start"]
+angles$end   <- se[, "end"]
+
+# Auto place angle labels just outside the arc radius toward the interior
+angles$mid <- (angles$start + angles$end)/2
+angles$lx  <- angles$x0 + (angles$r + 0.12)*cos(angles$mid)
+angles$ly  <- angles$y0 + (angles$r + 0.12)*sin(angles$mid)
+
+# Side midpoints for labels
+midpoints <- data.frame(
+  label = c("c", "a", "b"),
+  x = c((triangle$x[1]+triangle$x[2])/2,
+        (triangle$x[2]+triangle$x[3])/2,
+        (triangle$x[3]+triangle$x[1])/2),
+  y = c((triangle$y[1]+triangle$y[2])/2,
+        (triangle$y[2]+triangle$y[3])/2,
+        (triangle$y[3]+triangle$y[1])/2)
+)
+
+# ---- Plot ----
+ggplot() +
+  geom_polygon(data=triangle_closed, aes(x, y),
+               fill="white", color="black", linewidth=1) +
+  geom_text(data=midpoints, aes(x, y, label=label),
+            vjust=-0.5, size=5, color="blue") +
+  ggforce::geom_arc(data=angles, aes(x0=x0, y0=y0, r=r, start=start, end=end),
+                    inherit.aes=FALSE, color="darkgreen", lineend="round") +
+  geom_text(data=angles, aes(x=lx, y=ly, label=label),
+            size=5, color="darkgreen") +
+  coord_fixed() +
+  theme_void()
+```
