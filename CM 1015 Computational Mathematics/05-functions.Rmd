@@ -6,3 +6,30 @@ output:
 #  Functions and Kinematics
 
 Reading Materials: \newline
+Croft, A. and R. Davidson *Foundation maths.* (Harlow: Pearson, 2016) 6th edition. **Chapter 17 Graphs of Functions.**
+
+Bone, G., G. Chadha and N. Saunders A Level Physics A for OCR Year 1 and AS student book. **Chapter 3 Motion (sections 3.1–3.7).**
+
+Larson, R. Precalc with limits. (Boston, MA: Cengage, 2017) 4th edition. **Chapter 1 Functions and their graphs (sections 1.1–1.8).**
+
+## Functions and Graphs
+
+### Introduction to Functions
+
+### Type of Functions
+
+### Properties of Function
+
+### Graph Sketching
+
+### Application of Functions
+
+## Kinematics
+
+### Introduction to Kinematics
+
+### Motion as a Function
+
+### Graphical Interpretation
+
+### Worked Examples

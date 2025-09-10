@@ -10,6 +10,8 @@ Croft, A. and R. Davidson *Foundation maths.* (Harlow: Pearson, 2016) 6th editio
 
 ## Angles
 
+![](Assets/angles.png) 
+
 An **angle** is the measure of separation between two rays that share a common starting point (vertex).
 
 ### Units of Measurement
@@ -23,32 +25,32 @@ An **angle** is the measure of separation between two rays that share a common s
 
 * **Radians**:
 
+<center>![](Assets/radian-circle.png)</center>
+
   * Defined using the arc of a circle:
 
-    $$
+    \begin{equation}
     1 \text{ radian} = \frac{\text{arc length}}{\text{radius}}
-    $$
+    \end{equation}
   * A complete circle = $2\pi$ radians = 360°
 
 * **Conversion formulas**:
 
-  $$
+  \begin{equation}
   \text{radians} = \text{degrees} \times \frac{\pi}{180}, \quad 
   \text{degrees} = \text{radians} \times \frac{180}{\pi}
-  $$
+  \end{equation}
 
-### Special Angles
+### Type of Angles
 
-* Right angle = 90°
-* Flat angle = 180°
-* Complete angle = 360° (same as 0° because of periodicity)
-
-### Key Property
-
-* **Angles are periodic**:
-
-  * Every 360° (or $2\pi$ radians), angles repeat.
-  * Example: 0° ≡ 360° ≡ 720°, etc.
+| **Type of Angle** | **Measure (Degrees)**            | **Measure (Radians)**           | **Notes**                            |
+| ----------------- | -------------------------------- | ------------------------------- | ------------------------------------ |
+| Acute angle       | $0^\circ < \theta < 90^\circ$    | $0 < \theta < \tfrac{\pi}{2}$   | Smaller than a right angle           |
+| Right angle       | $\theta = 90^\circ$              | $\theta = \tfrac{\pi}{2}$       | Quarter turn                         |
+| Obtuse angle      | $90^\circ < \theta < 180^\circ$  | $\tfrac{\pi}{2} < \theta < \pi$ | Between right and flat               |
+| Flat angle        | $\theta = 180^\circ$             | $\theta = \pi$                  | Straight line                        |
+| Reflex angle      | $180^\circ < \theta < 360^\circ$ | $\pi < \theta < 2\pi$           | More than flat, less than full turn  |
+| Complete angle    | $\theta = 360^\circ$             | $\theta = 2\pi$                 | Same as $0^\circ$ due to periodicity |
 
 
 ## Triangles
@@ -58,9 +60,9 @@ An **angle** is the measure of separation between two rays that share a common s
 * A **triangle** is a polygon with **three sides** and **three angles**.
 * The sum of the interior angles of a triangle is always:
 
-  $$
+  \begin{equation}
   180^\circ \; \; \text{(or } \pi \text{ radians)}
-  $$
+  \end{equation}
 
 **Classification by Sides**
 
@@ -78,17 +80,17 @@ An **angle** is the measure of separation between two rays that share a common s
 
 * An **exterior angle** of a triangle equals the **sum of the two opposite interior angles**:
 
-  $$
+  \begin{equation}
   \text{Exterior angle} = \text{Angle}_1 + \text{Angle}_2
-  $$
+  \end{equation}
 
 **Triangle Inequality**
 
 For any triangle with sides $a, b, c$:
 
-$$
+\begin{equation}
 a + b > c, \quad b + c > a, \quad c + a > b
-$$
+\end{equation}
 
 * The **sum of the lengths of any two sides** must be **greater than** the third side.
 * This condition ensures the three sides can actually form a triangle.
@@ -106,16 +108,15 @@ $$
 * All angles are equal: $60^\circ$ each
 * Height formula:
 
-  $$
+  \begin{equation}
   h = \frac{\sqrt{3}}{2}a
-  $$
+  \end{equation}
 * Area:
 
-  $$
+  \begin{equation}
   A = \frac{\sqrt{3}}{4}a^2
-  $$
+  \end{equation}
 
----
 
 **2. Isosceles Triangle**
 
@@ -123,11 +124,10 @@ $$
 * Two equal base angles.
 * If base = $c$, height from apex bisects base:
 
-  $$
+  \begin{equation}
   h = \sqrt{a^2 - \left(\frac{c}{2}\right)^2}
-  $$
+  \end{equation}
 
----
 
 **3. Right Triangle**
 
@@ -138,9 +138,9 @@ $$
   * Legs = other two sides.
 * Area:
 
-  $$
+  \begin{equation}
   A = \frac{1}{2} \times \text{(base)} \times \text{(height)}
-  $$
+  \end{equation}
 * Foundation for **Pythagoras’ Theorem** (next section).
 
 ### Similar Triangles
@@ -154,15 +154,15 @@ Two triangles are **similar** if they have the same shape but not necessarily th
 
 **Notation**
 
-$$
+\begin{equation}
 \triangle ABC \sim \triangle DEF
-$$
+\end{equation}
 
 means $\angle A = \angle D, \; \angle B = \angle E, \; \angle C = \angle F$ and
 
-$$
+\begin{equation}
 \frac{AB}{DE} = \frac{BC}{EF} = \frac{CA}{FD}
-$$
+\end{equation}
 
 **Conditions for Similarity**
 
@@ -176,9 +176,9 @@ Two triangles are similar if:
 
 * Ratio of areas of two similar triangles equals the **square of the ratio of corresponding sides**:
 
-$$
+\begin{equation}
 \frac{\text{Area}_1}{\text{Area}_2} = \left(\frac{\text{Side}_1}{\text{Side}_2}\right)^2
-$$
+\end{equation}
 
 ### Pythagoras' Theorem
 
@@ -186,9 +186,9 @@ $$
 
 In a right-angled triangle:
 
-$$
+\begin{equation}
 a^2 + b^2 = c^2
-$$
+\end{equation}
 
 * $a, b$ = legs (sides adjacent to right angle)
 * $c$ = hypotenuse (side opposite the right angle, longest side)
@@ -209,6 +209,8 @@ $$
 
 ### Basic Ratios (Right Triangles)
 
+<center>![](Assets/right-angle-triangle.png)</center>
+
 For a right triangle with:
 
 * Angle $\theta$
@@ -216,11 +218,11 @@ For a right triangle with:
 * Adjacent side = $A$
 * Hypotenuse = $H$
 
-$$
+\begin{equation}
 \sin \theta = \frac{O}{H}, \quad
 \cos \theta = \frac{A}{H}, \quad
 \tan \theta = \frac{O}{A}
-$$
+\end{equation}
 
 **Mnemonic:**
  **SOH-CAH-TOA**
@@ -229,23 +231,87 @@ $$
 * **C**osine = **A**djacent / **H**ypotenuse
 * **T**angent = **O**pposite / **A**djacent
 
----
+### Law of Sines
 
-### Pythagorean Identities
+\begin{equation}
+\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C}
+\end{equation}
 
-$$
-\sin^2 \theta + \cos^2 \theta = 1
-$$
+*Proof*:
 
-$$
-1 + \tan^2 \theta = \sec^2 \theta
-$$
+Construct the altitude from $B$.
 
-$$
-1 + \cot^2 \theta = \csc^2 \theta
-$$
+<center>![](Assets/360px-Law_Of_Sines_1.png)</center>
 
----
+From the definition of sine:
+
+\begin{equation}
+\sin A = \frac{h}{c}, \quad \sin C = \frac{h}{a}
+\end{equation}
+
+Thus:
+
+\begin{equation}
+h = c \sin A, \quad h = a \sin C
+\end{equation}
+
+This gives:
+
+\begin{equation}
+c \sin A = a \sin C
+\end{equation}
+
+So:
+
+\begin{equation}
+\frac{a}{\sin A} = \frac{c}{\sin C}
+\end{equation}
+
+Similarly, constructing the altitude from $A$ gives:
+
+\begin{equation}
+\frac{b}{\sin B} = \frac{c}{\sin C}
+\end{equation}
+
+### Law of Cosines
+
+\begin{equation}
+c^2 = a^2 + b^2 - 2ab\cos C
+\end{equation}
+
+*Proof*:
+
+Using the same triangle from previous proof, let:
+
+\begin{equation}
+e = \text{CD}
+\end{equation}
+
+\begin{equation}
+f = \text{AD}
+\end{equation}
+
+We have that △CDB and △ADB are right triangles.
+
+Hence:
+
+\begin{align}
+	c^2 &= h^2+f^2\\ 
+	a^2 &= h^2+e^2\\ 
+	b^2 &= (e+f)^2\\
+	    &= e^2+f^2+2ef\\
+	e   &= A \cos C
+\end{align}
+
+Then:
+
+\begin{align}
+	c^2 &= h^2+f^2\\ 
+	    &= a^2-e^2+f^2\\ 
+	    &= a^2-e^2+f^2+2e^2-2e^2+2ef-2ef\\
+	    &= a^2+\underbrace{(e^2+f^2+2ef)}_{b^2}-2e\underbrace{(e+f)}_b\\
+	    &= a^2 + b^2 - 2ab\cos C
+\end{align}
 
 ### Special Angles (Summary Table)
 
@@ -256,99 +322,3 @@ $$
 | $45^\circ$ | $\tfrac{1}{\sqrt{2}}$ | $\tfrac{1}{\sqrt{2}}$ | 1                     |
 | $60^\circ$ | $\tfrac{\sqrt{3}}{2}$ | $\tfrac{1}{2}$        | $\sqrt{3}$            |
 | $90^\circ$ | 1                     | 0                     | undefined ($\infty$)  |
-
----
-
-### Law of Sines
-
-$$
-\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C}
-$$
-
-### Law of Cosines
-
-$$
-c^2 = a^2 + b^2 - 2ab\cos C
-$$
-
-
-
-```{r echo=FALSE, fig.cap="Right-angled triangle ABC"}
-library(ggplot2)
-library(ggforce)
-
-# Triangle vertices
-triangle <- data.frame(
-  name = c("A", "B", "C"),
-  x = c(0, 3, 1.5),
-  y = c(0, 0, 2.5)
-)
-
-triangle_closed <- rbind(triangle, triangle[1,])
-
-# ---- Compute side lengths ----
-dist <- function(p1, p2) sqrt((p1$x - p2$x)^2 + (p1$y - p2$y)^2)
-a <- dist(triangle[2,], triangle[3,]) # opposite A
-b <- dist(triangle[1,], triangle[3,]) # opposite B
-c <- dist(triangle[1,], triangle[2,]) # opposite C
-
-# Directions of incident sides at each vertex (radians)
-ang <- function(y, x) atan2(y, x)
-dirAB <- ang(triangle$y[2]-triangle$y[1], triangle$x[2]-triangle$x[1])
-dirAC <- ang(triangle$y[3]-triangle$y[1], triangle$x[3]-triangle$x[1])
-dirBA <- ang(triangle$y[1]-triangle$y[2], triangle$x[1]-triangle$x[2])
-dirBC <- ang(triangle$y[3]-triangle$y[2], triangle$x[3]-triangle$x[2])
-dirCA <- ang(triangle$y[1]-triangle$y[3], triangle$x[1]-triangle$x[3])
-dirCB <- ang(triangle$y[2]-triangle$y[3], triangle$x[2]-triangle$x[3])
-
-angles <- data.frame(
-  x0 = triangle$x,
-  y0 = triangle$y,
-  r  = 0.40,
-  start = c(dirAB, dirBA, dirCA),
-  end   = c(dirAC, dirBC, dirCB),
-  label = c("α", "β", "γ")
-)
-
-# ---- Fix: force the shorter interior arc ----
-short_arc <- function(s, e) {
-  d <- (e - s) %% (2*pi)         # ccw sweep in [0, 2π)
-  if (d > pi) {                   # long way -> go the other way
-    c(start = e, end = e + (2*pi - d))
-  } else {
-    c(start = s, end = s + d)
-  }
-}
-se <- t(mapply(short_arc, angles$start, angles$end))
-angles$start <- se[, "start"]
-angles$end   <- se[, "end"]
-
-# Auto place angle labels just outside the arc radius toward the interior
-angles$mid <- (angles$start + angles$end)/2
-angles$lx  <- angles$x0 + (angles$r + 0.12)*cos(angles$mid)
-angles$ly  <- angles$y0 + (angles$r + 0.12)*sin(angles$mid)
-
-# Side midpoints for labels
-midpoints <- data.frame(
-  label = c("c", "a", "b"),
-  x = c((triangle$x[1]+triangle$x[2])/2,
-        (triangle$x[2]+triangle$x[3])/2,
-        (triangle$x[3]+triangle$x[1])/2),
-  y = c((triangle$y[1]+triangle$y[2])/2,
-        (triangle$y[2]+triangle$y[3])/2,
-        (triangle$y[3]+triangle$y[1])/2)
-)
-
-# ---- Plot ----
-ggplot() +
-  geom_polygon(data=triangle_closed, aes(x, y),
-               fill="white", color="black", linewidth=1) +
-  geom_text(data=midpoints, aes(x, y, label=label),
-            vjust=-0.5, size=5, color="blue") +
-  ggforce::geom_arc(data=angles, aes(x0=x0, y0=y0, r=r, start=start, end=end),
-                    inherit.aes=FALSE, color="darkgreen", lineend="round") +
-  geom_text(data=angles, aes(x=lx, y=ly, label=label),
-            size=5, color="darkgreen") +
-  coord_fixed() +
-  theme_void()
-```

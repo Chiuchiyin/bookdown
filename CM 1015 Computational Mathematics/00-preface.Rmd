@@ -1,3 +1,9 @@
 # Preface {-}
 
-This is based on October 2022 version, so the content might not reflect the current version of the course. It is mostly based on my handwritten personal notes. I personally feel this course should be called "Foundation Mathematics" instead of "Computational Mathematics" because of the lack of "Numerical Methods" and probably some other things people more familiar with the topic would say. If you spot any error please don't hesitate to contact me via slack or mail me.
+This material is based on the October 2022 version of the course, so some content may not reflect the most current edition. Most of it comes from my own handwritten notes.
+
+Personally, I think the course would be more accurately titled “Foundational Mathematics” rather than “Computational Mathematics,” since it leaves out numerical methods (and probably other topics people more familiar with the field could point out).
+
+If you notice any errors, please feel free to reach out to me via Slack or email.
+
+*P.S. Chapter 4 has been delayed for ages because I’ve been too lazy to redraw all the triangles by hand.*
